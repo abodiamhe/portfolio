@@ -1,0 +1,80 @@
+//Use the reforward files
+@use "base" as *;
+
+body {
+  // font-family: "Lato", sans-serif;
+  // font-family: "Lato", serif;
+  font-family: "Poppins", serif;
+  line-height: 1;
+  font-weight: 300;
+  font-size: 1.6rem;
+}
+
+.bottom__line {
+  border-bottom: 0.5px solid var(--color-grey-light);
+  margin-bottom: 6rem;
+  padding-bottom: 2rem;
+}
+
+.bg-heading {
+  font-size: 6.2rem;
+  // color: #0077b6;
+  background-image: linear-gradient(to bottom, #48cae4, #0077b6);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 5rem;
+    font-weight: 700;
+  }
+}
+
+.bg-heading__paragraph {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+.paragraph {
+  line-height: 1.5;
+}
+
+.md-heading {
+  font-size: 3.6rem;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+
+.sm-heading {
+  display: block;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.v-sm-heading {
+  display: block;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+}

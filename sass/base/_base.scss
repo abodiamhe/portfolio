@@ -1,0 +1,74 @@
+// - Font sizes (px)
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+// - Spacing system (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+:root {
+  --color-primary: #112d4e;
+  --color-primary-dark: #0f2946;
+
+  --color-grey-light: #a0abb8;
+
+  --default-border-dradius: 6px;
+}
+
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest: 37.5em; //500px
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #48cae4 #0077b6;
+}
+
+::selection {
+  color: #48cae4;
+  background-color: #0077b6;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 56.2%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-grey-light);
+}
+
+.container {
+  display: grid;
+  justify-content: center; 
+  grid-template-rows: 10rem repeat(4, min-content);
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr)
+    [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+    [center-end]
+    minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-rows: 10rem;
+    grid-template-columns:
+      [full-start] minmax(3rem, 1fr) [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 14rem) [col-end]
+      )
+      [center-end] minmax(3rem, 1fr) [full-end];
+  }
+}

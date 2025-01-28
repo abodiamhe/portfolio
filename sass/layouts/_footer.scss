@@ -1,0 +1,23 @@
+.footer {
+  background-color: var(--color-primary-dark);
+  grid-column: center-start / center-end;
+  border-radius: var(--default-border-dradius);
+  margin-top: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  display: grid;
+  text-align: center;
+
+  &__contact {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    &--link {
+      color: #48cae4; 
+    }
+  }
+}
+
+.copyright {
+  margin-top: 3rem;
+}

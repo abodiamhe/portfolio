@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+
+    <title>Abodiamhe - full-stack web developer</title>
+  </head>
+  <body class="container">
+    <div class="navigation">
+      <!-- <p class="navigation__logo">Abodiamhe</p> -->
+      <div class="over__lay"></div>
+
+      <!-- ========================= Navigation ======================= -->
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link">Projects</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#contact" class="navigation__link">Contact</a>
+          </li>
+        </ul>
+        <!-- <div>Theme</div> -->
+      </nav>
+
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+    </div>
+
+    <!-- ========================= Header Section ======================= -->
+    <header class="header">
+      <div class="header__content">
+        <h1 class="bg-heading">Hi, I am Abodiamhe</h1>
+        <p class="bg-heading__paragraph">
+          A full-stack web developer, based in Abuja, Nigeria.
+        </p>
+        <div>
+          <a
+            onclick="window.open(this.href,'_blank');return false;"
+            target="_blank"
+            href="https://github.com/abodiamhe"
+            rel="noopener noreferrer"
+            aria-label="abodiamhe github profile"
+          >
+            <svg class="social__icon">
+              <use xlink:href="img/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+          <a
+            onclick="window.open(this.href,'_blank');return false;"
+            href="mailto:abodiamhe@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social__icon">
+              <use xlink:href="img/sprite.svg#icon-mail"></use>
+            </svg>
+          </a>
+          <a
+            onclick="window.open(this.href,'_blank');return false;"
+            href="https://www.linkedin.com/in/akhigbe-sadiq-0a8713190/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social__icon">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+          <a
+            onclick="window.open(this.href,'_blank');return false;"
+            href="https://x.com/akhigbesadiq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="social__icon">
+              <use xlink:href="img/sprite.svg#icon-x"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="header__image">
+        <img class="" src="img/author.jpeg" alt="Abodiamhe photo" />
+      </div>
+    </header>
+
+    <!-- ========================= About Section ======================= -->
+    <section class="about" id="about">
+      <div class="bottom__line">
+        <h2 class="md-heading">About Me</h2>
+      </div>
+      <div class="about__content">
+        <div class="about__paragraph">
+          <h3 class="sm-heading">Get to know Abodiamhe</h3>
+          <p class="paragraph">
+            Hi! I'm Abodiamhe, a sofware developer with a passion for building
+            interactive and visually appealing web application. I have a strong
+            foundation in JavaScript, NodeJS and React having completed 6 online
+            courses in udemy from the best tutors in web development.
+          </p>
+          <br />
+          <p class="paragraph">
+            Not coming from a computer science background, I know I have to put
+            up a lot of shift to meet up with the trend, this lead me to quiting
+            my job as a warehouse supervisor in 2023 to focus all my attention
+            in learning the world of software development, since then I have
+            been practicing everyday, building, breaking and then fixing what I
+            broke.
+          </p>
+          <br />
+          <p class="paragraph">
+            I learn by doing and I love to learn and try new technologies. I
+            find making websites very fun, and I'm always up to try and get
+            better at it.
+          </p>
+        </div>
+        <div class="skills">
+          <h3 class="sm-heading">Skills</h3>
+          <ul class="skills__list">
+            <li class="skills__item">HTML5</li>
+            <li class="skills__item">CSS3</li>
+            <li class="skills__item">JavaScript</li>
+            <li class="skills__item">NodeJS</li>
+            <li class="skills__item">Express</li>
+            <li class="skills__item">SASS</li>
+            <li class="skills__item">React</li>
+            <li class="skills__item">TypeScript</li>
+            <li class="skills__item">SQL</li>
+            <li class="skills__item">NoSQL</li>
+            <li class="skills__item">GraphQL</li>
+            <li class="skills__item">NextJs</li>
+          </ul>
+          <div class="resume">
+            <a href="#">See resume &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="skills">Skills</div> -->
+
+    <!-- ========================= Project List ======================= -->
+    <section class="project" id="projects">
+      <h2 class="md-heading">Cool Stuff I've Built</h2>
+      <div class="project__list">
+        <div class="project__item">
+          <div class="item__photo">
+            <img src="/img/project_1.png" alt="" class="project__item--photo" />
+          </div>
+          <h4 class="v-sm-heading">Savory Restaurant website</h4>
+          <div class="project__overview">
+            <p class="built__with">Built with: HTML CSS NodeJS Postgresql</p>
+            <div class="project__description">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__description--link"
+              >
+                <span class="project__subtitle">View Project</span>
+                <span>
+                  <svg class="project__icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-arrow-outline-right"
+                    ></use>
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__description--link"
+              >
+                <span class="project__subtitle">View Code</span>
+                <span>
+                  <svg class="project__icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project__item">
+          <div class="item__photo">
+            <img src="/img/project_2.png" alt="" class="project__item--photo" />
+          </div>
+          <h4 class="v-sm-heading">Savory Restaurant website</h4>
+          <div class="project__overview">
+            <p class="built__with">Built with: HTML CSS Node MongoDB</p>
+            <div class="project__description">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__description--link"
+              >
+                <span class="project__subtitle">View Project</span>
+                <span>
+                  <svg class="project__icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-arrow-outline-right"
+                    ></use>
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__description--link"
+              >
+                <span class="project__subtitle">View Code</span>
+                <span>
+                  <svg class="project__icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project__item">
+          <div class="item__photo">
+            <img src="/img/project_3.png" alt="" class="project__item--photo" />
+          </div>
+          <h4 class="v-sm-heading">Savory Restaurant website</h4>
+          <div class="project__overview">
+            <p class="built__with">Built with: HTML CSS</p>
+            <div class="project__description">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__description--link"
+              >
+                <span class="project__subtitle">View Project</span>
+                <span>
+                  <svg class="project__icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-arrow-outline-right"
+                    ></use>
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__description--link"
+              >
+                <span class="project__subtitle">View Code</span>
+                <span>
+                  <svg class="project__icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project__item">
+          <div class="item__photo">
+            <img src="/img/project_1.png" alt="" class="project__item--photo" />
+          </div>
+          <h4 class="v-sm-heading">Savory Restaurant website</h4>
+          <div class="project__overview">
+            <p class="built__with">Built with: HTML CSS</p>
+            <div class="project__description">
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__description--link"
+              >
+                <span class="project__subtitle">View Project</span>
+                <span>
+                  <svg class="project__icon">
+                    <use
+                      xlink:href="img/sprite.svg#icon-arrow-outline-right"
+                    ></use>
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="http://"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project__description--link"
+              >
+                <span class="project__subtitle">View Code</span>
+                <span>
+                  <svg class="project__icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="resume center">
+        <a
+          onclick="window.open(this.href,'_blank');return false;"
+          target="_blank"
+          href="https://github.com/abodiamhe"
+          >See more &rarr;</a
+        >
+      </div>
+    </section>
+
+    <!-- ========================= Footer ======================= -->
+    <footer class="footer" id="contact">
+      <div class="bottom__line">
+        <h2 class="md-heading">Have any Questions? Reach out.</h2>
+        <p class="footer__contact">
+          Send me a
+          <a
+            onclick="window.open(this.href,'_blank');return false;"
+            href="https://x.com/akhigbesadiq"
+            rel="noopener noreferrer"
+            class="footer__contact--link"
+            >tweet</a
+          >
+          or you can email me at:
+          <a
+            onclick="window.open(this.href,'_blank');return false;"
+            href="mailto:abodiamhe@gmail.com"
+            target="_blank"
+            class="footer__contact--link"
+            >abodiamhe@gmail.com</a
+          >
+        </p>
+      </div>
+      <div>
+        <a
+          onclick="window.open(this.href,'_blank');return false;"
+          target="_blank"
+          href="https://github.com/abodiamhe"
+          rel="noopener noreferrer"
+        >
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-github"></use>
+          </svg>
+        </a>
+        <a
+          onclick="window.open(this.href,'_blank');return false;"
+          href="mailto:abodiamhe@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-mail"></use>
+          </svg>
+        </a>
+        <a
+          onclick="window.open(this.href,'_blank');return false;"
+          href="https://www.linkedin.com/in/akhigbe-sadiq-0a8713190/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+        <a
+          onclick="window.open(this.href,'_blank');return false;"
+          href="https://x.com/akhigbesadiq"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#icon-x"></use>
+          </svg>
+        </a>
+      </div>
+      <p class="copyright">
+        Copyright &copy; 2024 - 2025 Abodiamhe. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
