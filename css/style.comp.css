@@ -224,15 +224,10 @@ a {
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer;
   z-index: 2000;
   display: none;
-}
-.navigation__button.open-nav {
-  position: fixed;
-  top: 1.8rem;
 }
 @media only screen and (max-width: 56.25em) {
   .navigation__button {
@@ -295,6 +290,17 @@ a {
 .open-nav .navigation__button {
   position: fixed;
   top: 1.8rem;
+  right: 8rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .open-nav .navigation__button {
+    right: 4.4rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .open-nav .navigation__button {
+    right: 3rem;
+  }
 }
 
 .open-nav .navigation__nav {
