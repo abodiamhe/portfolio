@@ -79,14 +79,14 @@
         display: inline-block;
         font-size: 1.3rem;
         font-weight: 500;
-        color: inherit;
+        color: inherit; 
         padding: 1.2rem 1.8rem;
         border: 0.8px solid var(--color-grey-light);
         border-radius: 100px;
         transition: all 0.3s;
       }
       &:hover,
-      &:visited {
+      &:active {
         background-color: var(--color-grey-light);
         border: 0.8px solid var(--color-grey-light);
         color: var(--color-primary-dark);
@@ -133,4 +133,9 @@
 .center {
   display: block;
   text-align: center;
+}
+
+.project__type {
+  font-weight: 200; 
+  margin-bottom: 2rem;
 }

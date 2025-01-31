@@ -111,26 +111,12 @@
         <div class="about__paragraph">
           <h3 class="sm-heading">Get to know Abodiamhe</h3>
           <p class="paragraph">
-            Hi! I'm Abodiamhe, a sofware developer with a passion for building
-            interactive and visually appealing web application. I have a strong
-            foundation in JavaScript, NodeJS and React having completed 6 online
-            courses in udemy from the best tutors in web development.
+            Hi! I'm Abodiamhe, a self taught developer with a passion for
+            building interactive and visually appealing web application. I have
+            a strong foundation in JavaScript, NodeJS and React having completed
+            6 online courses in udemy from the best tutors in web development.
           </p>
-          <br />
-          <p class="paragraph">
-            Not coming from a computer science background, I know I have to put
-            up a lot of shift to meet up with the trend, this lead me to quiting
-            my job as a warehouse supervisor in 2023 to focus all my attention
-            in learning the world of software development, since then I have
-            been practicing everyday, building, breaking and then fixing what I
-            broke.
-          </p>
-          <br />
-          <p class="paragraph">
-            I learn by doing and I love to learn and try new technologies. I
-            find making websites very fun, and I'm always up to try and get
-            better at it.
-          </p>
+          <br /> 
         </div>
         <div class="skills">
           <h3 class="sm-heading">Skills</h3>
@@ -149,7 +135,12 @@
             <li class="skills__item">NextJs</li>
           </ul>
           <div class="resume">
-            <a href="#">See resume &rarr;</a>
+            <a
+              onclick="window.open(this.href,'_blank');return false;"
+              target="_blank"
+              href="./resume.pdf"
+              >See resume &rarr;</a
+            >
           </div>
         </div>
       </div>
@@ -158,19 +149,23 @@
 
     <!-- ========================= Project List ======================= -->
     <section class="project" id="projects">
-      <h2 class="md-heading">Cool Stuff I've Built</h2>
+      <h2 class="md-heading">Projects I'm proud of</h2>
       <div class="project__list">
         <div class="project__item">
           <div class="item__photo">
-            <img src="/img/project_1.png" alt="" class="project__item--photo" />
+            <img src="/img/project_4.png" alt="" class="project__item--photo" />
           </div>
-          <h4 class="v-sm-heading">Savory Restaurant website</h4>
+          <h4 class="v-sm-heading">Keeper - Keep and delete notes</h4>
+          <p class="project__type">Web App</p>
           <div class="project__overview">
-            <p class="built__with">Built with: HTML CSS NodeJS Postgresql</p>
+            <p class="built__with">
+              Built with: HTML CSS NodeJS Postgresql Axios
+            </p>
             <div class="project__description">
               <a
-                href="http://"
+                href="http://keeper-client-mu.vercel.app/"
                 target="_blank"
+                onclick="window.open(this.href,'_blank');return false;"
                 rel="noopener noreferrer"
                 class="project__description--link"
               >
@@ -184,7 +179,8 @@
                 </span>
               </a>
               <a
-                href="http://"
+                href="https://github.com/abodiamhe/keeper"
+                onclick="window.open(this.href,'_blank');return false;"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project__description--link"
@@ -203,12 +199,14 @@
           <div class="item__photo">
             <img src="/img/project_2.png" alt="" class="project__item--photo" />
           </div>
-          <h4 class="v-sm-heading">Savory Restaurant website</h4>
+          <h4 class="v-sm-heading">Mapty - Workout tracker</h4>
+          <p class="project__type">Web App</p>
           <div class="project__overview">
             <p class="built__with">Built with: HTML CSS Node MongoDB</p>
             <div class="project__description">
               <a
-                href="http://"
+                href="https://mapty-coral-ten.vercel.app/"
+                onclick="window.open(this.href,'_blank');return false;"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project__description--link"
@@ -223,7 +221,8 @@
                 </span>
               </a>
               <a
-                href="http://"
+                href="https://github.com/abodiamhe/mapty"
+                onclick="window.open(this.href,'_blank');return false;"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project__description--link"
@@ -242,12 +241,14 @@
           <div class="item__photo">
             <img src="/img/project_3.png" alt="" class="project__item--photo" />
           </div>
-          <h4 class="v-sm-heading">Savory Restaurant website</h4>
+          <h4 class="v-sm-heading">Nexter - Real estate</h4>
+          <p class="project__type">Website</p>
           <div class="project__overview">
             <p class="built__with">Built with: HTML CSS</p>
             <div class="project__description">
               <a
-                href="http://"
+                href="https://nexter-livid-one.vercel.app/"
+                onclick="window.open(this.href,'_blank');return false;"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project__description--link"
@@ -262,7 +263,8 @@
                 </span>
               </a>
               <a
-                href="http://"
+                href="https://github.com/abodiamhe/nexter"
+                onclick="window.open(this.href,'_blank');return false;"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project__description--link"
@@ -281,12 +283,14 @@
           <div class="item__photo">
             <img src="/img/project_1.png" alt="" class="project__item--photo" />
           </div>
-          <h4 class="v-sm-heading">Savory Restaurant website</h4>
+          <h4 class="v-sm-heading">OmniFood Restaurant</h4>
+          <p class="project__type">Website</p>
           <div class="project__overview">
             <p class="built__with">Built with: HTML CSS</p>
             <div class="project__description">
               <a
-                href="http://"
+                onclick="window.open(this.href,'_blank');return false;"
+                href="https://omnifood-lemon.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project__description--link"
@@ -301,7 +305,8 @@
                 </span>
               </a>
               <a
-                href="http://"
+                onclick="window.open(this.href,'_blank');return false;"
+                href="https://github.com/abodiamhe/omnifood"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project__description--link"
